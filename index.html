@@ -1,12 +1,472 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Domain For Sale</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>germanswingers.com — Domain For Sale</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --card: rgba(255,255,255,.78);
+      --stroke: rgba(0,0,0,.10);
+      --text: #111;
+      --muted: rgba(0,0,0,.65);
+      --muted2: rgba(0,0,0,.55);
+      --gold: #b8860b;
+      --accent: #ff2d7a;
+      --shadow: 0 18px 60px rgba(0,0,0,.12);
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      color:var(--text);
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+      /* light LGBTQ-inspired pastel gradient */
+      background:
+        radial-gradient(900px 600px at 15% 15%, rgba(255, 0, 0, .10), transparent 55%),
+        radial-gradient(900px 600px at 85% 18%, rgba(255, 140, 0, .12), transparent 55%),
+        radial-gradient(900px 650px at 20% 85%, rgba(255, 215, 0, .12), transparent 55%),
+        radial-gradient(900px 650px at 80% 82%, rgba(0, 200, 83, .12), transparent 55%),
+        radial-gradient(900px 650px at 50% 20%, rgba(33, 150, 243, .12), transparent 55%),
+        radial-gradient(900px 650px at 60% 90%, rgba(156, 39, 176, .12), transparent 55%),
+        linear-gradient(180deg, #ffffff, #fbfbff);
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px;
+    }
+
+    .wrap{
+      width:min(1040px, 100%);
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:18px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--stroke);
+      border-radius:18px;
+      padding:30px;
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:14px;
+    }
+
+    .badge{
+      width:44px;height:44px;border-radius:12px;
+      background: linear-gradient(135deg, rgba(255,45,45,.90), rgba(245,200,76,.85));
+      display:flex;align-items:center;justify-content:center;
+      font-family:Oswald, sans-serif;
+      font-weight:700;
+      color:#111;
+      letter-spacing:.5px;
+    }
+
+    h1{
+      font-family:Oswald, sans-serif;
+      font-size:44px;
+      line-height:1.05;
+      margin:0 0 10px 0;
+      letter-spacing:.3px;
+    }
+
+    .domain{
+      display:inline-block;
+      font-weight:700;
+      color: var(--gold);
+      letter-spacing:.3px;
+    }
+
+    .sub{
+      margin:0 0 18px 0;
+      color:var(--muted);
+      font-size:16px;
+      line-height:1.55;
+    }
+
+    .pillrow{ display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 22px 0; }
+    .pill{
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.65);
+      padding:9px 12px;
+      border-radius:999px;
+      color:var(--muted);
+      font-size:13px;
+      display:flex; align-items:center; gap:8px;
+      white-space:nowrap;
+    }
+    .dot{
+      width:8px;height:8px;border-radius:50%;
+      background: var(--accent);
+      box-shadow: 0 0 12px rgba(255,45,122,.25);
+    }
+
+    .ctaRow{ display:flex; flex-wrap:wrap; gap:12px; margin-top:10px; }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:700;
+      border:1px solid rgba(0,0,0,.12);
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+      user-select:none;
+      cursor:pointer;
+    }
+
+    .btnPrimary{
+      background: linear-gradient(45deg, rgba(255,45,45,.95), rgba(245,200,76,.92));
+      color:#111;
+      box-shadow: 0 10px 26px rgba(255,45,45,.12);
+    }
+    .btnPrimary:hover{ transform: translateY(-1px); box-shadow: 0 14px 34px rgba(255,45,45,.16); }
+
+    .btnGhost{
+      background: rgba(255,255,255,.75);
+      color: #111;
+    }
+    .btnGhost:hover{ transform: translateY(-1px); background: rgba(255,255,255,.90); }
+
+    .note{
+      margin-top:14px;
+      color:var(--muted2);
+      font-size:12.5px;
+      line-height:1.45;
+    }
+
+    .right h2{
+      font-family:Oswald, sans-serif;
+      margin:0 0 12px 0;
+      font-size:20px;
+      letter-spacing:.3px;
+    }
+
+    ul{ list-style:none; padding:0; margin:0; display:grid; gap:10px; }
+    .item{
+      border:1px solid rgba(0,0,0,.10);
+      background: rgba(255,255,255,.65);
+      border-radius:14px;
+      padding:14px;
+      display:flex;
+      gap:12px;
+    }
+    .icon{
+      width:38px;height:38px;border-radius:12px;
+      background: rgba(255,255,255,.85);
+      border:1px solid rgba(0,0,0,.08);
+      display:flex;align-items:center;justify-content:center;
+      font-size:18px;
+    }
+    .item b{ display:block; margin-bottom:4px; }
+    .item p{
+      margin:0;
+      color:var(--muted);
+      font-size:13.5px;
+      line-height:1.45;
+    }
+
+    .offer{
+      margin-top:14px;
+      border:1px solid rgba(0,0,0,.10);
+      background: rgba(255,255,255,.70);
+      border-radius:14px;
+      padding:14px;
+    }
+
+    .offerTop{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:8px;
+    }
+    .offerTop .title{
+      font-family:Oswald, sans-serif;
+      font-size:18px;
+    }
+    .offerTop .min{
+      font-size:12.5px;
+      color:var(--muted);
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(0,0,0,.10);
+      background: rgba(255,255,255,.75);
+      white-space:nowrap;
+    }
+
+    .offer label{
+      display:block;
+      font-size:12px;
+      color:var(--muted2);
+      margin:10px 0 6px;
+    }
+
+    .offer input, .offer textarea{
+      width:100%;
+      border-radius:12px;
+      border:1px solid rgba(0,0,0,.12);
+      background: rgba(255,255,255,.95);
+      color:var(--text);
+      padding:10px 12px;
+      outline:none;
+      font-family:Inter, sans-serif;
+    }
+    .offer textarea{ min-height:74px; resize:vertical; }
+
+    .offer .row{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+
+    .tiny{
+      margin-top:10px;
+      color:var(--muted2);
+      font-size:12px;
+      line-height:1.45;
+    }
+
+    .error{
+      margin-top:10px;
+      display:none;
+      color:#b00020;
+      font-size:12.5px;
+      font-weight:600;
+    }
+    .error.show{ display:block; }
+
+    .toast{
+      position:fixed;
+      left:50%;
+      bottom:18px;
+      transform:translateX(-50%);
+      background: rgba(0,0,0,.82);
+      border:1px solid rgba(255,255,255,.18);
+      color:#fff;
+      padding:10px 12px;
+      border-radius:12px;
+      font-size:13px;
+      opacity:0;
+      pointer-events:none;
+      transition:opacity .18s ease, transform .18s ease;
+    }
+    .toast.show{
+      opacity:1;
+      transform:translateX(-50%) translateY(-2px);
+    }
+
+    .footer{
+      grid-column:1 / -1;
+      text-align:center;
+      color:var(--muted2);
+      font-size:12px;
+      margin-top:4px;
+    }
+
+    @media (max-width: 860px){
+      .wrap{ grid-template-columns:1fr; }
+      h1{ font-size:38px; }
+      .offer .row{ grid-template-columns:1fr; }
+    }
+  </style>
 </head>
-<body style="text-align:center;font-family:Arial;margin-top:15%;">
-<h1>This domain is for sale</h1>
-<p>If you are interested in purchasing, please contact:</p>
-<p><b>shubham13402@gmail.com</b></p>
+
+<body>
+  <div class="wrap">
+
+    <div class="card left">
+      <div class="brand">
+        <div class="badge">DE</div>
+        <div>
+          <div style="color:var(--muted2); font-size:12.5px; letter-spacing:.12em; text-transform:uppercase;">
+            domain for sale
+          </div>
+          <div style="font-weight:700; font-size:14px; color:var(--muted);">
+            Germany • lifestyle • community
+          </div>
+        </div>
+      </div>
+
+      <h1><span class="domain">germanswingers.com</span></h1>
+
+      <p class="sub">
+        A high-intent domain name suited for buyers in the adult lifestyle space.
+        Best fit for brands who want keyword traffic + a memorable name for Germany / Europe.
+      </p>
+
+      <div class="pillrow">
+        <div class="pill"><span class="dot"></span> adult dating platforms</div>
+        <div class="pill"><span class="dot"></span> swinger clubs (Germany / Europe)</div>
+      </div>
+
+      <div class="ctaRow">
+        <a class="btn btnPrimary"
+           href="mailto:shubham13402@gmail.com?subject=germanswingers.com%20purchase%20inquiry&body=Hi%2C%0A%0AI%27m%20interested%20in%20purchasing%20germanswingers.com.%0A%0ACompany%2FProject%3A%0AOffer%20range%3A%0ATimeline%3A%0A%0AThanks%2C">
+          ✉️ contact to buy
+        </a>
+
+        <button class="btn btnGhost" id="copyBtn" type="button">
+          📋 copy email
+        </button>
+      </div>
+
+      <div class="note">
+        base rate: £1000. include company name + timeline for a quick reply.
+      </div>
+    </div>
+
+    <div class="card right">
+      <h2>Ideal buyers</h2>
+
+      <ul>
+        <li class="item">
+          <div class="icon">💘</div>
+          <div>
+            <b>Adult dating platforms</b>
+            <p>Use the keyword name to capture direct traffic, build trust, and improve click-through.</p>
+          </div>
+        </li>
+
+        <li class="item">
+          <div class="icon">🏛️</div>
+          <div>
+            <b>Swinger clubs (Germany / Europe)</b>
+            <p>Perfect for club directories, event booking, memberships, and community building.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="offer">
+        <div class="offerTop">
+          <div class="title">Make an offer</div>
+          <div class="min">minimum: £1000</div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label>Offer amount (GBP)</label>
+            <input id="offerAmount" type="number" inputmode="numeric" min="1000" step="50" value="1000" />
+          </div>
+          <div>
+            <label>Timeline</label>
+            <input id="timeline" type="text" placeholder="e.g., this week / 7 days" />
+          </div>
+        </div>
+
+        <label>Company / Project</label>
+        <input id="company" type="text" placeholder="your company or project name" />
+
+        <label>Message (optional)</label>
+        <textarea id="msg" placeholder="any details, transfer preferences, questions..."></textarea>
+
+        <div class="ctaRow" style="margin-top:12px;">
+          <button class="btn btnPrimary" id="sendOffer" type="button">📨 send offer</button>
+          <a class="btn btnGhost" href="mailto:shubham13402@gmail.com?subject=germanswingers.com%20quick%20question">
+            quick question
+          </a>
+        </div>
+
+        <div class="error" id="err">Offer must be at least £1000.</div>
+
+        <div class="tiny">
+          this doesn’t submit anywhere. it opens your email app with your offer pre-filled.
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> germanswingers.com — inquiries: <span id="emailText">shubham13402@gmail.com</span>
+    </div>
+
+  </div>
+
+  <div class="toast" id="toast">Copied!</div>
+
+  <script>
+    const EMAIL = "shubham13402@gmail.com";
+    const MIN_GBP = 1000;
+
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // copy email
+    const copyBtn = document.getElementById("copyBtn");
+    const toast = document.getElementById("toast");
+
+    function showToast(text){
+      toast.textContent = text;
+      toast.classList.add("show");
+      setTimeout(()=>toast.classList.remove("show"), 1200);
+    }
+
+    copyBtn.addEventListener("click", async () => {
+      try{
+        await navigator.clipboard.writeText(EMAIL);
+        showToast("Email copied");
+      }catch(e){
+        const ta = document.createElement("textarea");
+        ta.value = EMAIL;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        showToast("Email copied");
+      }
+    });
+
+    // send offer
+    const err = document.getElementById("err");
+
+    document.getElementById("sendOffer").addEventListener("click", () => {
+      const amountRaw = document.getElementById("offerAmount").value.trim();
+      const amount = Number(amountRaw);
+
+      if (!Number.isFinite(amount) || amount < MIN_GBP){
+        err.classList.add("show");
+        showToast("Minimum is £1000");
+        return;
+      }
+      err.classList.remove("show");
+
+      const timeline = document.getElementById("timeline").value.trim();
+      const company = document.getElementById("company").value.trim();
+      const msg = document.getElementById("msg").value.trim();
+
+      const subject = encodeURIComponent("Offer for germanswingers.com (min £1000)");
+      const bodyLines = [
+        "Hi,",
+        "",
+        "I want to make an offer for germanswingers.com.",
+        "",
+        `Offer (GBP): £${amount}`,
+        `Timeline: ${timeline || "-"}`,
+        `Company / Project: ${company || "-"}`,
+        "",
+        "Message:",
+        msg || "-",
+        "",
+        "Thanks,"
+      ];
+
+      const body = encodeURIComponent(bodyLines.join("\n"));
+      window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
+    });
+  </script>
 </body>
 </html>
-
